@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+p {
+    margin: 5px 0;
+}
+
+#cadastro {
+    display: list-item;
+    flex-wrap: wrap;
+}
+
+
+.pessoas {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: calc(33.33% - 20px);
+}
+
+.pessoas .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pessoas .info label {
+    flex: 1;
+    font-weight: bold;
+}
+
+.pessoas .info input[type="text"],
+.pessoas .info input[type="range"] {
+    flex: 2;
+    margin-left: 10px;
+}
+
+.pessoas button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pessoas button:hover {
+    background-color: #333;
+}
+
+
+.linha {
+    display: flex;
+}
+
+/* Estilização para dispositivos móveis */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .pessoas {
+        flex: 1 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
